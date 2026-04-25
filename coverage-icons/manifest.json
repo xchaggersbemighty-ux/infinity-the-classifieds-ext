@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "ITC Coverage Icons",
+  "version": "1.0",
+  "description": "Adds checkmark / no-entry icons next to green and red items in the coverage section on infinitytheclassifieds.com",
+  "content_scripts": [
+    {
+      "matches": ["https://www.infinitytheclassifieds.com/analyze/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}
